@@ -1,125 +1,149 @@
 ---
-title: "Event 2"
-date: 2024-01-01
-weight: 1
+title: "Meet up event 2"
+date: 2026-05-30
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+
+# Bài thu hoạch “AWS Vietnam Community Day 2026”
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Nâng cao kỹ năng điện toán đám mây AWS thông qua các lộ trình học tập và chiến lược chứng chỉ chuyên nghiệp.
+- Vượt qua trì hoãn bằng cách mổ xẻ rào cản tâm lý như bẫy lười biếng và xây dựng tư duy tập trung cao độ.
+- Xây dựng sự tự tin và tư duy giao tiếp hiệu quả tại nơi làm việc để thúc đẩy sự phát triển nghề nghiệp trong ngành kỹ thuật.
+- Chia sẻ trải nghiệm cộng tác, làm sản phẩm mẫu nhanh (prototyping) và sự gắn kết đội ngũ trong môi trường Hackathon áp lực.
+- Định hình những góc khuất phức tạp và nợ kỹ thuật nằm dưới giai đoạn phát triển và triển khai dự án phần mềm.
+- Làm chủ các nguyên lý thiết kế kiến trúc đám mây có khả năng mở rộng để tối ưu hóa ứng dụng web và di động hiện đại.
 
 ### Danh Sách Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
-
+- **Huynh Thai Linh** – Technical Speaker, First Cloud AI Journey
+- **Khac Uy** – 3rd Year Student, Vietnamese-German University
+- **Nguyen Thi Quynh Nhu** – Why We Always Need Confidence
+- **Pham Quang Thai** – Speaker về Cloud Architecture cho Multiplayer Games
+- **Tran Huu Nghia** – Full-Stack Developer
+- **Tran Minh Quan** –Speaker về DevOps & Project Management
+- **The Ballers Team - FTP University** - Hackathon - More like "HA! A tons of fun
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### 1. Level Up Your AWS Skills with Cloud Pathways
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+**Diễn giả:** Huynh Thai Linh – Level Up Your AWS Skills with Cloud Quest and Floci
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+- Chia sẻ về Floci — công cụ giả lập môi trường AWS cục bộ hoàn toàn miễn phí, hỗ trợ viết code thử nghiệm nhanh mà không lo phát sinh hóa đơn đám mây.
+- Giới thiệu phương pháp học AWS qua không gian tương tác 3D của tựa game AWS Cloud Quest giúp giảm bớt sự khô khan lý thuyết.
+- Đúc kết công thức làm chủ hạ tầng theo 3 bước: Làm quen qua game (Quest) -> Kiểm thử cục bộ (Local Test) -> Đẩy lên hệ thống thực (Production).
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+#### 2. The Iceberg of Procrastination – When “Laziness” Is Just the Tip of Fear
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+**Diễn giả:** Khac Uy - Productivity & Mental Coach
 
-#### Domain-Driven Design (DDD)
+Một phiên chia sẻ chuyên sâu về tâm lý học giúp bóc tách nguyên nhân gốc rễ của việc trì hoãn thực thi và đóng băng dự án:
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+- Định nghĩa lại sự trì hoãn: Chỉ ra rằng trì hoãn kinh niên thường là cơ chế phòng vệ tâm lý trước sự lo âu, chứ không đơn thuần là lười biếng.
+- Chia sẻ về tảng băng chìm tâm lý: Nỗi sợ thất bại, chủ nghĩa hoàn hảo và áp lực từ quy mô dự án quá lớn gây tê liệt năng suất của developer.
+- Khung tư duy thực tế giúp chia nhỏ các codebase phức tạp thành các vi tác vụ (micro-tasks) để lấy lại sự tập trung ngay lập tức.
 
-#### Event-Driven Architecture
+#### 3. Why We Always Need Confidence
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+**Diễn giả:** Nguyen Thi Quynh Nhu
 
-#### Compute Evolution
+Bài chia sẻ nhấn mạnh kỹ năng mềm là một thành phần cốt lõi của năng lực thực thi kỹ thuật, khẳng định đà thăng tiến sự nghiệp cần giao tiếp rõ ràng:
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+- Giải quyết hội chứng kẻ giả mạo (Imposter Syndrome) thường gặp ở các lập trình viên trẻ và sinh viên mới tốt nghiệp trong môi trường cạnh tranh.
+- Kỹ thuật diễn đạt các giải pháp kỹ thuật phức tạp một cách dễ hiểu cho các bên liên quan (stakeholders) không thuộc khối kỹ thuật khi bàn giao dự án
 
-#### Amazon Q Developer
+####  4. The Ballers – Hackathon: More Like “HA! A Tons of Fun”
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+**Diễn giả:**  The Ballers Team - Huỳnh An Khương, Mai Quốc Anh, Nguyễn Trần Minh Quân
+
+Sự chia sẻ về quá trình tham gia cuộc thi Hackathon của The Ballers Team, từ nhưng ý tưởng nhỏ đàu tiên cho đến khi hoàn thành một sản phẩm hoàn chỉnh trong thời gian ngắn của cuộc thi đưa ra. Quan những trải nghiệm đó, The Ballers Team muốn truyền tải về giá trị của tư duy cầu tiến , sự gắn kết giữa các thành viên trong team và bản lĩnh xoay sở trước những áp lực của cuộc thi. Và cuối cùng là The Ballers Team đã đưa ra lời khuyên, hãy dám can đảm , bản lĩnh đi thi các cuộc thi của Hackathon, đừng quá sợ về cuộc thi hay gì hết, dám nghĩ dám làm, dù bạn không là người giỏi nhất nhưng bạn vẫn có thể vẫn làm được, hãy tự tin vào bản thân và khuyến khích và mong muốn gặp được mọi người tại cuộc thi mới nhất của Hackathon sắp tới.
+
+#### 5. How Cloud Architecture Powers Modern Multiplayer Games
+
+**Diễn giả:** Phạm Quang Thái
+
+- Đi sâu vào bài toán thiết kế hạ tầng chịu tải cho các dòng game có lượng người chơi lớn cùng lúc.
+- Cách phối hợp các dịch vụ chiến lược của AWS như GameLift để quản lý máy chủ game, DynamoDB để lưu trữ trạng thái người chơi và CloudFront để tối ưu độ trễ đường truyền.
+
+#### 6. The Hidden Iceberg of a Project: DevOps Before Disaster
+
+**Diễn giả:** Trần Minh Quân
+
+- Sử dụng mô hình tảng băng chìm để định vị các nguyên nhân cốt lõi gây đổ vỡ dự án phần mềm nằm dưới tầng mã nguồn.
+- Khẳng định vai trò cứu cánh của văn hóa DevOps thông qua 4 trụ cột chính: Thúc đẩy cộng tác (Collaboration), Tự động hóa quy trình (Automation), Phản hồi nhanh (Fast Feedback) và Không ngừng cải tiến (Continuous Improvement).
+
+#### 7. A Comprehensive Astrology Platform for the New Generation
+
+**Diễn giả:** Trần Hữu Nghĩa
+
+- Case study đầy cảm hứng về việc số hóa hệ thống kiến thức chiêm tinh học truyền thống bằng sức mạnh của công nghệ hiện đại.
+- Ứng dụng linh hoạt các mô hình dữ liệu Cloud và AI của AWS để xử lý các thuật toán tính toán bản đồ sao cá nhân hóa theo thời gian thực.
+- Thiết kế giao diện hiện đại và trải nghiệm thông minh nhằm đưa các bộ môn khoa học cổ xưa tiếp cận thế hệ trẻ một cách trực quan nhất.
 
 ### Những Gì Học Được
 
 #### Tư Duy Thiết Kế
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+- Tư duy thiết kế kiến trúc đám mây không chỉ gói gọn trong các bài toán doanh nghiệp thông thường mà là bệ phóng cho cả ngành công nghiệp game lẫn các ứng dụng ý tưởng đời sống.
+- Triển khai DevOps sớm là giải pháp bền vững nhất để kiểm soát rủi ro và ngăn chặn các lỗi nghiêm trọng khi bàn giao dự án.
+- Sử dụng các công cụ giả lập local như Floci giúp tối ưu hóa chi phí thử nghiệm và tăng tốc vòng lặp phát triển phần mềm.
+- Sự kết hợp giữa hạ tầng Cloud đám mây và AI là chìa khóa để xây dựng nhanh các sản phẩm MVP chất lượng cao tại các sân chơi công nghệ.
 
-#### Kiến Trúc Kỹ Thuật
+#### Tư Duy Phát Triển Bản Thân
+- Procrastination chủ yếu là fear, không phải lười.
+- **Confidence** là kỹ năng có thể xây dựng và là cầu nối cho technical skills.
+- Luôn nhìn vào “phần chìm của iceberg” trong dự án và bản thân.
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+Chia sẻ về giá trị của sự tự tin, cách vượt qua Imposter Syndrome và các “hack” thực tế như 5-Second Rule, celebrate small wins.
 
-#### Chiến Lược Hiện Đại Hóa
+#### 7. The Ballers – Hackathon: More Like “HA! A Tons of Fun”
+**Diễn giả:** Huỳnh An Khương, Mai Quốc Anh, Nguyễn Trần Minh Quân
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+-Phiên chia sẻ kể về hành trình tham gia Hackathon của nhóm The Ballers, từ quá trình xây dựng ý tưởng đến hoàn thiện sản phẩm trong thời gian ngắn. Các diễn giả nhấn mạnh tầm quan trọng của tinh thần học hỏi, làm việc nhóm và khả năng thích nghi dưới áp lực.
+### Những Gì Học Được
 
-### Ứng Dụng Vào Công Việc
+#### Tư Duy Kỹ Thuật
+- Cloud Architecture quan trọng với cả gaming và các ứng dụng sáng tạo (như Astrology Platform).
+- DevOps giúp ngăn ngừa “thảm họa” dự án từ sớm.
+- Floci là công cụ mạnh để test local mà không tốn chi phí.
+- Cloud và AI có thể được sử dụng để xây dựng MVP nhanh trong các cuộc thi Hackathon.
+- Thực hành thông qua dự án thực tế giúp nâng cao kỹ năng giải quyết vấn đề.
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+#### Tư Duy Phát Triển Bản Thân
+
+- Procrastination chủ yếu là fear, không phải lười.
+- **Confidence** là kỹ năng có thể xây dựng và là cầu nối cho technical skills.
+- Luôn nhìn vào “phần chìm của iceberg” trong dự án và bản thân.
+
+#### Kỹ Năng Thực Tế
+
+- Cách ứng dụng mô hình Tảng băng chìm (Iceberg Model) vào quy trình quản trị và đánh giá rủi ro dự án nhóm.
+- Làm chủ lộ trình tự học AWS tinh gọn và các quy tắc hành động ngắn hạn (5 giây, 5 phút) để duy trì kỷ luật làm việc.
+- Kỹ năng phối hợp nội bộ, quản trị thời gian ngặt nghèo để hiện thực hóa sản phẩm mẫu trong một quỹ thời gian cực kỳ giới hạn.
+- Nghệ thuật trình bày và thuyết phục (pitching) giữ vai trò quyết định đến việc đưa ý tưởng tiếp cận người dùng hoặc ban giám khảo.
+
+### Ứng Dụng Vào Công Việc Và Học Tập
+
+- Đưa Floci và AWS Cloud Quest vào bộ công cụ học tập hàng ngày để tự xây dựng và thử nghiệm các mô hình hạ tầng đồ án môn học mà không lo về chi phí.
+- Mỗi khi mất phương hướng hoặc trì hoãn trước một codebase lớn: Áp dụng ngay kỹ thuật nhận diện nỗi sợ và kích hoạt hành động trong vòng 5 giây/5 phút.
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+Nội dung của Event 2 tại AWS Vietnam Community Day 2026 đã mang lại cho tôi những trải nghiệm vô cùng phong phú và nhiều năng lượng. Buổi chia sẻ là một sự cân bằng hoàn hảo khi đan xen nhịp nhàng giữa các chủ đề kỹ thuật hệ thống chuyên sâu (như DevOps, kiến trúc game) với những câu chuyện phát triển mindset cá nhân cực kỳ gần gũi và thực tế.
 
 #### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+- Sự bền vững của một dự án công nghệ phụ thuộc rất lớn vào phần chìm bên dưới — chính là quy trình vận hành và sự gắn kết giữa con người với con người.
+- Sự tự tin không phải là tố chất bẩm sinh mà là một kỹ năng có thể rèn luyện hàng ngày, và nó là cầu nối bắt buộc để đưa năng lực kỹ thuật tỏa sáng.
+- Trải nghiệm áp lực từ các sân chơi như Hackathon là trường học tốt nhất để nâng cấp toàn diện cả kỹ năng cứng lẫn khả năng chịu áp lực và làm việc nhóm.
+
 
 #### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+
+![Check-in on the 26th floor](/images/4-eventparticipated/event2.jpg)
+
+> Tổng thể, Event 2 không chỉ bồi đắp cho tôi những bài học chuyên môn giá trị mà còn định hình một tư duy phát triển bản thân cân bằng — một hành trang không thể thiếu cho chặng đường trở thành một kỹ sư công nghệ tương lai.

@@ -1,59 +1,40 @@
 ---
 title: "Worklog Tuần 3"
-date: 2024-01-01
+date: 2026-05-04
 weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 3:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thực hành thiết lập công cụ quản lý chi tiêu AWS Budgets để giám sát chi phí dịch vụ đám mây một cách chặt chẽ.
+* Nắm vững các bước phân quyền thực tế trong hệ thống với AWS IAM thông qua việc quản trị Users, Groups, Roles và cấu hình Switch Role.
+* Nghiên cứu hạ tầng vật lý và mô hình vận hành của AWS Data Center cùng các bài lab bổ trợ.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Nghiên cứu chi tiết về dịch vụ AWS Budgets và cách thức thiết lập ngân sách <br> - Thực hành tạo lập ngân sách kiểm soát chi phí (Cost Budget) và cấu hình ngưỡng cảnh báo tự động qua email khi chi phí vượt hạn mức | 04/05/2026 | 04/05/2026 | <https://000007.awsstudygroup.com/> |
+| 3 | - Thực hành quản lý truy cập cơ bản bằng dịch vụ AWS IAM <br> - Khởi tạo các IAM Users, IAM Groups và gán chính sách phân quyền (Policies) phù hợp để quản trị người dùng | 05/05/2026 | 05/05/2026 | <https://000002.awsstudygroup.com/> |
+| 4 | - Nghiên cứu sâu hơn và thực hiện bài lab nâng cao về IAM Roles <br> - Tiến hành thực hành cơ chế chuyển đổi vai trò (Switch Role) từ tài khoản thường sang vai trò Admin quản trị | 06/05/2026 | 06/05/2026 | <https://000002.awsstudygroup.com/> |
+| 5 | - Học tập kiến thức tổng quan về trung tâm dữ liệu vật lý AWS Data Center <br> - Nghiên cứu cách thiết kế độ sẵn sàng cao, hệ thống dự phòng nguồn điện, tản nhiệt và các tiêu chuẩn bảo mật vật lý nghiêm ngặt | 07/05/2026 | 07/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Thực hiện các bài lab trực quan hóa và mô phỏng cấu trúc hạ tầng vật lý toàn cầu của AWS <br> - Tổng kết kiến thức đã học trong tuần, đánh giá hoạt động phân quyền IAM và kiểm tra trạng thái ngân sách AWS Budgets | 08/05/2026 | 08/05/2026 | <https://000007.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Kiểm soát tốt ngân sách đám mây:**
+  * Cấu hình thành công các cảnh báo tài chính trong AWS Budgets với các ngưỡng chi tiêu dự báo (forecasted cost) và chi tiêu thực tế (actual cost).
+  * Hiểu rõ cơ chế tự động gửi thông báo qua email khi tài khoản có xu hướng vượt ngưỡng chi phí đã lập lịch trước.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* **Làm chủ kỹ năng cấu hình AWS IAM thực tế:**
+  * Biết cách tạo lập, quản lý và phân nhóm người dùng (IAM Users & Groups) một cách bài bản.
+  * Tự tay xây dựng chính sách (IAM Policies) và vai trò (IAM Roles) phục vụ việc ủy thác quyền truy cập tạm thời.
+  * Thực hành thành thạo tính năng Switch Role từ tài khoản vận hành Operator User sang Admin Role, tuân thủ nguyên tắc không sử dụng Root Account cho các hoạt động thường ngày.
+  * Thực hành và áp dụng thành công Nguyên tắc đặc quyền tối thiểu (Least Privilege).
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Hiểu sâu về hạ tầng vật lý của AWS (AWS Data Center):**
+  * Nắm được cách thức AWS thiết kế các trung tâm dữ liệu nhằm đảm bảo tính dự phòng cao (High Availability) và khả năng chống chịu lỗi (Fault Tolerance).
+  * Hiểu cách tổ chức liên kết giữa các Edge Locations, Availability Zones (AZs) và Regions trên phạm vi toàn thế giới.
+  * Hoàn thành các bài lab mô phỏng và sơ đồ trực quan hóa hạ tầng mạng lưới vật lý của AWS.

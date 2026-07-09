@@ -1,126 +1,87 @@
 ---
 title: "Blog 1"
-date: 2024-01-01
+date: 2026-06-16
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# Bắt đầu với healthcare data lakes: Sử dụng microservices
 
-Các data lake có thể giúp các bệnh viện và cơ sở y tế chuyển dữ liệu thành những thông tin chi tiết về doanh nghiệp và duy trì hoạt động kinh doanh liên tục, đồng thời bảo vệ quyền riêng tư của bệnh nhân. **Data lake** là một kho lưu trữ tập trung, được quản lý và bảo mật để lưu trữ tất cả dữ liệu của bạn, cả ở dạng ban đầu và đã xử lý để phân tích. data lake cho phép bạn chia nhỏ các kho chứa dữ liệu và kết hợp các loại phân tích khác nhau để có được thông tin chi tiết và đưa ra các quyết định kinh doanh tốt hơn.
+# Tự động hóa số hóa hồ sơ y tế với Amazon Bedrock Data Automation và AWS HealthLake
 
-Bài đăng trên blog này là một phần của loạt bài lớn hơn về việc bắt đầu cài đặt data lake dành cho lĩnh vực y tế. Trong bài đăng blog cuối cùng của tôi trong loạt bài, *“Bắt đầu với data lake dành cho lĩnh vực y tế: Đào sâu vào Amazon Cognito”*, tôi tập trung vào các chi tiết cụ thể của việc sử dụng Amazon Cognito và Attribute Based Access Control (ABAC) để xác thực và ủy quyền người dùng trong giải pháp data lake y tế. Trong blog này, tôi trình bày chi tiết cách giải pháp đã phát triển ở cấp độ cơ bản, bao gồm các quyết định thiết kế mà tôi đã đưa ra và các tính năng bổ sung được sử dụng. Bạn có thể truy cập các code samples cho giải pháp tại Git repo này để tham khảo.
+Trong khuôn khổ AWS Vietnam Community Day 2026, mình có cơ hội tìm hiểu về một giải pháp công nghệ rất thực tế và mang tính thời sự: ứng dụng Generative AI để tự động hóa quy trình số hóa tài liệu y tế ở quy mô doanh nghiệp.
 
----
+Hiện nay, một thách thức lớn tại nhiều bệnh viện và cơ sở y tế là việc lưu trữ và xử lý một lượng khổng lồ hồ sơ bệnh án dưới dạng giấy tờ truyền thống, bản scan hoặc tệp tin PDF phi cấu trúc. Quy trình nhập liệu thủ công truyền thống không chỉ tiêu tốn nhiều thời gian, nhân lực mà còn tiềm ẩn tỷ lệ sai sót cao, gây khó khăn cho việc tra cứu, đồng bộ và phân tích dữ liệu lâm sàng để phục vụ điều trị.
+
+Giải pháp được giới thiệu trong sơ đồ kiến trúc là sự kết hợp chặt chẽ giữa sức mạnh trích xuất của Amazon Bedrock Data Automation (BDA) và khả năng quản lý dữ liệu chuẩn hóa của AWS HealthLake, tạo nên một pipeline xử lý tự động hóa toàn diện từ đầu đến cuối.
+
 
 ## Hướng dẫn kiến trúc
 
-Thay đổi chính kể từ lần trình bày cuối cùng của kiến trúc tổng thể là việc tách dịch vụ đơn lẻ thành một tập hợp các dịch vụ nhỏ để cải thiện khả năng bảo trì và tính linh hoạt. Việc tích hợp một lượng lớn dữ liệu y tế khác nhau thường yêu cầu các trình kết nối chuyên biệt cho từng định dạng; bằng cách giữ chúng được đóng gói riêng biệt với microservices, chúng ta có thể thêm, xóa và sửa đổi từng trình kết nối mà không ảnh hưởng đến những kết nối khác. Các microservices được kết nối rời thông qua tin nhắn publish/subscribe tập trung trong cái mà tôi gọi là “pub/sub hub”.
+Sơ đồ kiến trúc giải pháp mô tả một pipeline tự động, serverless và có khả năng mở rộng, giúp giảm khối lượng công việc thủ công và hạn chế sai sót cho các tổ chức y tế. Quy trình vận hành chi tiết bao gồm các bước tuần tự được thể hiện qua sơ đồ hệ thống dưới đây.
 
-Giải pháp này đại diện cho những gì tôi sẽ coi là một lần lặp nước rút hợp lý khác từ last post của tôi. Phạm vi vẫn được giới hạn trong việc nhập và phân tích cú pháp đơn giản của các **HL7v2 messages** được định dạng theo **Quy tắc mã hóa 7 (ER7)** thông qua giao diện REST.
+**Kiến trúc giải pháp bây giờ như sau**:
 
-**Kiến trúc giải pháp bây giờ như sau:**
+![Hình 1](/images/3-BlogsTranslated/3.1-Blog1/ARCHBLOG-1364-1.png)
 
-> *Hình 1. Kiến trúc tổng thể; những ô màu thể hiện những dịch vụ riêng biệt.*
+> *Hình 1. Kiến trúc đầu-cuối thể hiện pipeline hướng sự kiện, từ lúc upload PDF đến khi lưu trữ dữ liệu tuân thủ FHIR.*
 
----
 
-Mặc dù thuật ngữ *microservices* có một số sự mơ hồ cố hữu, một số đặc điểm là chung:  
-- Chúng nhỏ, tự chủ, kết hợp rời rạc  
-- Có thể tái sử dụng, giao tiếp thông qua giao diện được xác định rõ  
-- Chuyên biệt để giải quyết một việc  
-- Thường được triển khai trong **event-driven architecture**
+#### Luồng vận hành chi tiết của hệ thống
 
-Khi xác định vị trí tạo ranh giới giữa các microservices, cần cân nhắc:  
-- **Nội tại**: công nghệ được sử dụng, hiệu suất, độ tin cậy, khả năng mở rộng  
-- **Bên ngoài**: chức năng phụ thuộc, tần suất thay đổi, khả năng tái sử dụng  
-- **Con người**: quyền sở hữu nhóm, quản lý *cognitive load*
-
----
 
 ## Lựa chọn công nghệ và phạm vi giao tiếp
 
-| Phạm vi giao tiếp                        | Các công nghệ / mô hình cần xem xét                                                        |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Trong một microservice                   | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Giữa các microservices trong một dịch vụ | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Giữa các dịch vụ                         | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+| Phạm vi giao tiếp                              | Các công nghệ / mô hình cần xem xét                                                        |
+| ----------------------------------------       | ------------------------------------------------------------------------------------------ |
+| Kích hoạt luồng dữ liệu tự động bên trong pipeline                   | Amazon S3 Event Notification, S3 Event Trigger                            |
+| Xử lý logic và điều hướng dữ liệu trung gian | AWS Lambda (BDA Job Trigger, FHIR Processor) |
+| Trích xuất dữ liệu thông minh và chuẩn hóa                         | Amazon Bedrock Data Automation, AWS |HealthLake                                      |
+| Giám sát, ghi log và quản lý tập trung toàn hệ thống  |  Amazon CloudWatch for logs (Centralized logging)  |
+
+
+## Phân rã dịch vụ và lưu trữ
+
+Việc phân chia ranh giới xử lý giữa các thành phần giúp hệ thống hoạt động rời rạc và tăng tính bền vững: 
+- Mỗi dịch vụ (S3, Lambda, Bedrock, HealthLake) chỉ tập trung giải quyết đúng một nhiệm vụ chuyên biệt.  
+- Kết nối giữa các thành phần được thực hiện bất đồng bộ dựa trên sự kiện (Event-driven) sinh ra từ bộ lưu trữ Amazon S3.  
+- Giảm thiểu hoàn toàn các kết nối đồng bộ trực tiếp giúp hệ thống tránh được tình trạng thắt nút cổ chai khi lượng hồ sơ tải lên tăng đột biến.
+
+
+## Core processing (Bộ xử lý cốt lõi)
+
+Cung cấp lớp xử lý dữ liệu nền tảng và tầng trích xuất thông minh, bao gồm:
+- **Amazon S3** (input PDF) làm nơi tiếp nhận dữ liệu thô đầu vào.
+- **Amazon Bedrock Data Automation kết hợp BDA Blueprints** (JSON templates) để bóc tách thông tin lâm sàng.
+- **Amazon S3** (Extracted Medical Data) lưu trữ dữ liệu trung gian sau phân tích.
+
+> Chỉ cho phép ghi dữ liệu thô trực tiếp vào S3 đầu vào, toàn bộ luồng xử lý và chuẩn hóa sau đó đều diễn ra gián tiếp qua AWS Lambda → đảm bảo tính toàn vẹn.
+
+
+
+## Tầng chuẩn hóa dữ liệu đầu ra
+
+- Cung cấp dịch vụ chuyên dụng AWS HealthLake để lưu trữ dữ liệu theo cấu trúc y tế quốc tế FHIR R4. 
+- Đồng bộ dữ liệu thô thông qua tiến trình chuyển đổi tự động của hàm Lambda tạo tác vụ (FHIR Processor and Job Creator).  
+- Loại bỏ hoàn toàn các kho chứa dữ liệu bị cô lập (Data Silos), giúp các ứng dụng client dễ dàng truy vấn qua cổng FHIR APIs.
 
 ---
-
-## The pub/sub hub
-
-Việc sử dụng kiến trúc **hub-and-spoke** (hay message broker) hoạt động tốt với một số lượng nhỏ các microservices liên quan chặt chẽ.  
-- Mỗi microservice chỉ phụ thuộc vào *hub*  
-- Kết nối giữa các microservice chỉ giới hạn ở nội dung của message được xuất  
-- Giảm số lượng synchronous calls vì pub/sub là *push* không đồng bộ một chiều
-
-Nhược điểm: cần **phối hợp và giám sát** để tránh microservice xử lý nhầm message.
-
----
-
-## Core microservice
-
-Cung cấp dữ liệu nền tảng và lớp truyền thông, gồm:  
-- **Amazon S3** bucket cho dữ liệu  
-- **Amazon DynamoDB** cho danh mục dữ liệu  
-- **AWS Lambda** để ghi message vào data lake và danh mục  
-- **Amazon SNS** topic làm *hub*  
-- **Amazon S3** bucket cho artifacts như mã Lambda
-
-> Chỉ cho phép truy cập ghi gián tiếp vào data lake qua hàm Lambda → đảm bảo nhất quán.
-
----
-
-## Front door microservice
-
-- Cung cấp API Gateway để tương tác REST bên ngoài  
-- Xác thực & ủy quyền dựa trên **OIDC** thông qua **Amazon Cognito**  
-- Cơ chế *deduplication* tự quản lý bằng DynamoDB thay vì SNS FIFO vì:
-  1. SNS deduplication TTL chỉ 5 phút
-  2. SNS FIFO yêu cầu SQS FIFO
-  3. Chủ động báo cho sender biết message là bản sao
-
----
-
-## Staging ER7 microservice
-
-- Lambda “trigger” đăng ký với pub/sub hub, lọc message theo attribute  
-- Step Functions Express Workflow để chuyển ER7 → JSON  
-- Hai Lambda:
-  1. Sửa format ER7 (newline, carriage return)
-  2. Parsing logic  
-- Kết quả hoặc lỗi được đẩy lại vào pub/sub hub
 
 ---
 
 ## Tính năng mới trong giải pháp
 
-### 1. AWS CloudFormation cross-stack references
-Ví dụ *outputs* trong core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+### 1. Phân tích tài liệu thông minh với Generative AI
+
+ Thay vì phải nhập từng dữ liệu bằng tay, hệ thống sử dụng Amazon Bedrock Data Automation kết hợp với các cấu trúc mẫu (Blueprints) để tự động hóa hoàn toàn việc chuyển đổi nội dung trong tài liệu thô thành dữ liệu có cấu trúc với độ chính xác cao.
+
+## 2. Chuẩn hóa dữ liệu y tế chuyên sâu
+
+Việc đồng bộ dữ liệu về kho lưu trữ AWS HealthLake theo chuẩn FHIR R4 giúp phá vỡ các rào cản cô lập dữ liệu thường gặp trong ngành y tế, hỗ trợ các tổ chức y tế khai thác, tìm kiếm và phân tích dữ liệu tốt hơn.
+
+Đây là một ví dụ rõ ràng cho thấy Generative AI không chỉ dùng để tạo nội dung, mà còn có thể hỗ trợ xử lý dữ liệu thực tế trong những lĩnh vực quan trọng như chăm sóc sức khỏe.
+
+## Link bài viết gốc:
+https://aws.amazon.com/blogs/machine-learning/automate-medical-record-digitization-with-amazon-bedrock-data-automation-and-aws-healthlake/
+
+

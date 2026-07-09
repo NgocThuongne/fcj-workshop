@@ -1,59 +1,47 @@
 ---
 title: "Worklog Tuần 5"
-date: 2024-01-01
+date: 2026-05-18
 weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tiếp tục học tập trực tiếp tại văn phòng và thực hiện các bài lab được giao.
+* Tham dự hội thảo chuyên đề **AWS First Cloud AI Journey - Community Day** nhằm cập nhật kiến thức chuyên sâu về:
+  * Kiến trúc **Multi-Agent (Đa tác nhân)** để tự động hóa các luồng nghiệp vụ phức tạp.
+  * Cơ chế bộ nhớ đệm (Caching) tối ưu hạ tầng mạng phân phối của **Amazon CloudFront**.
+  * Bản chất và giải pháp kiểm soát tính bất định (**Non-determinism**) của các mô hình ngôn ngữ lớn (LLM).
+  * Quy trình thiết kế và phát triển nhanh sản phẩm tối thiểu khả dụng (**MVP**) dưới áp lực thời gian từ case study Hackathon.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Lên văn phòng học tập trực tiếp cùng người hướng dẫn <br> - Chuẩn bị tài nguyên và thiết lập môi trường thực hành cho các bài lab trong tuần | 18/05/2026 | 18/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Nghiên cứu lý thuyết và thực hành các cấu hình cơ bản liên quan đến hạ tầng Web và dịch vụ EC2/S3 | 19/05/2026 | 19/05/2026 | <https://000048.awsstudygroup.com/vi/> |
+| 4 | - Tìm hiểu lý thuyết về mạng phân phối nội dung (CDN) và cơ chế tối ưu hóa cache của Amazon CloudFront | 20/05/2026 | 20/05/2026 | <https://000094.awsstudygroup.com/vi/> |
+| 5 | - Nghiên cứu tính bất định (Non-determinism) của LLM <br> - Tìm hiểu nguyên nhân gây ra sai lệch (Hallucination) và các kỹ thuật kiểm soát chất lượng dữ liệu AI đầu ra | 21/05/2026 | 21/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Nghiên cứu quy trình phát triển sản phẩm MVP trong thời gian ngắn <br> - Khảo sát các case study thực tế từ cuộc thi Hackathon để rút ra bài học tối ưu tiến độ | 22/05/2026 | 22/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| Bảy | - Tham gia trực tiếp buổi hội thảo **AWS First Cloud AI Journey - Community Day** <br> - Lắng nghe các phiên chia sẻ chuyên sâu về Multi-Agent, CloudFront Caching, LLM Non-determinism và LotusHacks 2026 | 23/05/2026 | 23/05/2026 | [Bài viết sự kiện](../../4-eventparticipated/4.1-event1/) |
 
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Tích lũy kinh nghiệm làm việc thực tế:**
+  * Hoàn thành đầy đủ các bài thực hành lab độc lập tại văn phòng và duy trì tương tác tốt với người hướng dẫn.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* **Tiếp cận kiến thức Multi-Agent System nâng cao:**
+  * Hiểu rõ cách thức hoạt động của hệ thống Đa tác nhân (Multi-Agent System), cách chia nhỏ các bài toán siêu phức tạp của doanh nghiệp thành các nhiệm vụ nhỏ cho nhiều AI chuyên biệt xử lý.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* **Làm chủ hạ tầng phân phối với Amazon CloudFront:**
+  * Nắm giữ lý thuyết và cơ chế hoạt động của CloudFront Edge Locations, cơ chế Caching nhiều lớp để tăng tốc độ truyền tải và tối ưu hóa chi phí băng thông.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* **Kiểm soát chất lượng đầu ra của AI:**
+  * Hiểu rõ nguyên nhân sinh ra tính bất định (Non-determinism) khi tối ưu hóa phần cứng chạy LLM và biết các phương án thực tế để kiểm soát kết quả đầu ra (chỉnh nhiệt độ Temperature, thiết lập Guardrails).
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* **Kỹ năng phát triển sản phẩm linh hoạt (Agile/MVP):**
+  * Đúc kết bài học giá trị về thiết kế và phát triển nhanh sản phẩm MVP dưới áp lực thời gian từ case study thực tế của đội UTMorpho tại LotusHacks 2026.
 
 

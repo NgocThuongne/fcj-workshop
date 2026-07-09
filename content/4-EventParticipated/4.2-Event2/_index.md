@@ -1,126 +1,135 @@
 ---
-title: "Event 2"
-date: 2024-01-01
-weight: 1
+title: "Meet up event 2"
+date: 2026-05-30
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+
+# Summary Report: “AWS Vietnam Community Day 2026”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Enhance AWS cloud computing skills through structured learning pathways and professional certification strategies.
+- Overcome procrastination by analyzing psychological barriers such as laziness traps and cultivating a high-focus mindset.
+- Build workplace confidence and effective communication mindsets to accelerate career growth in the engineering sector.
+- Share experiences regarding team collaboration, rapid prototyping, and team cohesion under high-pressure Hackathon environments.
+- Uncover the complex underlying challenges and technical debt inherent in the software development and deployment lifecycle.
+- Master scalable cloud architecture design principles to optimize modern web and mobile applications.
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Huynh Thai Linh** – Technical Speaker, First Cloud AI Journey
+- **Khac Uy** – 3rd Year Student, Vietnamese-German University
+- **Nguyen Thi Quynh Nhu** – Why We Always Need Confidence
+- **Pham Quang Thai** – Speaker on Cloud Architecture for Multiplayer Games
+- **Tran Huu Nghia** – Full-Stack Developer
+- **Tran Minh Quan** – Speaker on DevOps & Project Management
+- **The Ballers Team - FPT University** - Hackathon - More like "HA! A tons of fun"
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### 1. Level Up Your AWS Skills with Cloud Pathways
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+**Speaker:** Huynh Thai Linh – Level Up Your AWS Skills with Cloud Quest and Floci
 
-#### Transitioning to modern application architecture – Microservices
+- Shared about Floci — a completely free local AWS environment simulator that supports rapid prototyping and testing without incurring cloud bills.
+- Introduced AWS learning methodologies using the interactive 3D space of the AWS Cloud Quest game, reducing the dry nature of pure theory.
+- Summarized the 3-step formula to master cloud infrastructure: Get familiar via the game (Quest) -> Local testing (Local Test) -> Deploy to real systems (Production).
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+#### 2. The Iceberg of Procrastination – When “Laziness” Is Just the Tip of Fear
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+**Speaker:** Khac Uy - Productivity & Mental Coach
 
-#### Domain-Driven Design (DDD)
+An in-depth session on psychology to analyze the root causes of execution procrastination and project freezes:
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+- Redefined procrastination: Indicated that chronic procrastination is often a psychological defense mechanism against anxiety, rather than simple laziness.
+- Shared the psychological iceberg: Fear of failure, perfectionism, and pressure from oversized projects that paralyze developer productivity.
+- Practical thinking framework to break down complex codebases into micro-tasks to regain focus immediately.
 
-#### Event-Driven Architecture
+#### 3. Why We Always Need Confidence
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+**Speaker:** Nguyen Thi Quynh Nhu
 
-#### Compute Evolution
+This session emphasized that soft skills are a core component of technical execution capability, asserting that career progression requires clear communication:
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+- Addressed Imposter Syndrome, which is common among young programmers and recent graduates in competitive environments.
+- Techniques for expressing complex technical solutions in an easy-to-understand manner for non-technical stakeholders during project handovers.
 
-#### Amazon Q Developer
+#### 4. The Ballers – Hackathon: More Like “HA! A Tons of Fun”
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+**Speakers:** The Ballers Team - Huynh An Khuong, Mai Quoc Anh, Nguyen Tran Minh Quan
+
+This session recounted the journey of the Ballers team participating in the Hackathon, from the initial brainstorming of ideas to finishing a complete product within a tight timeframe. The speakers emphasized:
+- The importance of a growth mindset, teamwork, and adaptability under pressure.
+- Encouraging others to be courageous and participate in Hackathons: "Dare to think, dare to do—even if you are not the most experienced, you can still succeed if you believe in yourself."
+- Shared practical advice on managing expectations and looking forward to meeting fellow developers at upcoming Hackathon events.
+
+#### 5. How Cloud Architecture Powers Modern Multiplayer Games
+
+**Speaker:** Pham Quang Thai
+
+- Deep dive into the problem of designing load-bearing infrastructure for games with a large number of concurrent players.
+- How to coordinate strategic AWS services such as GameLift for game server management, DynamoDB for storing player state, and CloudFront to optimize network latency.
+
+#### 6. The Hidden Iceberg of a Project: DevOps Before Disaster
+
+**Speaker:** Tran Minh Quan
+
+- Used the iceberg model to identify the root causes of software project failures that lie beneath the source code level.
+- Asserted the rescuing role of DevOps culture through 4 main pillars: Collaboration, Automation, Fast Feedback, and Continuous Improvement.
+
+#### 7. A Comprehensive Astrology Platform for the New Generation
+
+**Speaker:** Tran Huu Nghia
+
+- An inspiring case study on digitizing traditional astrology knowledge systems using modern technology.
+- Flexible application of AWS Cloud and AI data models to process personalized star map calculation algorithms in real-time.
+- Designing a modern interface and smart experience to bring ancient sciences to the younger generation in the most intuitive way.
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Technical & Design Mindset
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+- Cloud architecture is not just for common enterprise problems but is a launchpad for both the gaming industry and creative applications (like an Astrology Platform).
+- Early DevOps deployment is the most sustainable solution to prevent project "disasters" and control risks before handover.
+- Emulating local environments using tools like Floci is highly effective for testing without incurring unnecessary costs, speeding up development loops.
+- Combining Cloud infrastructure and AI is the key to building high-quality MVP products quickly in Hackathons and tech competitions.
+- Hands-on practice through real projects is the best way to enhance problem-solving skills.
 
-#### Technical Architecture
+#### Self-Development Mindset
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- Procrastination is mainly driven by fear, not laziness.
+- **Confidence** is a buildable skill and serves as a vital bridge to technical capabilities.
+- Always look at the "hidden part of the iceberg" in projects and oneself.
+- Shared the value of confidence, how to overcome Imposter Syndrome, and practical hacks such as the 5-Second Rule and celebrating small wins.
 
-#### Modernization Strategy
+#### Practical Skills
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- Apply the Iceberg Model to team management and group project risk assessment.
+- Master a lean AWS self-study roadmap and short-term action rules (the 5-second and 5-minute rules) to maintain work discipline.
+- Enhance internal coordination and tight time management skills to realize prototypes within highly limited timeframes.
+- The art of presentation and pitching, which plays a deciding role in delivering ideas to users or judges.
 
-### Applying to Work
+### Applying to Work and Studies
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- Incorporate Floci and AWS Cloud Quest into daily learning tools to build and test infrastructure models for coursework without worrying about costs.
+- Whenever feeling lost or procrastinating on a large codebase: Immediately apply the fear-recognition technique and trigger action within 5 seconds or 5 minutes.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+The content of Event 2 at AWS Vietnam Community Day 2026 provided me with extremely rich and high-energy experiences. The sessions achieved a perfect balance by seamlessly weaving deep systems-engineering topics (such as DevOps and game architecture) with highly relatable, practical personal mindset growth stories.
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Lessons Learned
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+- The sustainability of a technology project relies heavily on the hidden parts underneath — namely operational processes and human connection.
+- Confidence is not an innate trait but a skill that can be practiced daily, serving as a mandatory bridge to let technical capabilities shine.
+- Experiencing the pressure of environments like a Hackathon is the best school to comprehensively upgrade both technical skills and the ability to work and adapt under high pressure.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Event Photos
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+![Check-in on the 26th floor](/images/4-eventparticipated/event2.jpg)
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+> Overall, Event 2 not only provided me with valuable technical knowledge but also helped reshape a balanced self-development mindset — an essential toolkit for my journey to becoming a future technology engineer.

@@ -1,126 +1,212 @@
 ---
-title: "Event 1"
-date: 2024-01-01
+title: "AWS First Cloud AI Journey - Community Day"
+date: 2026-05-23
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+
+# Summary Report: “AWS First Cloud AI Journey - Community Day”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Optimize context, build long-term memory frameworks ("Second AI Brain"), and chart AI career roadmaps for students.
+- Leverage the No-code Amazon Quick suite to handle data processing and workflow automation using natural language.
+- Master Amazon CloudFront infrastructure to boost loading speeds, fortify security, and cut bandwidth costs.
+- Extract MVP development workflows and technical crisis-management skills under the pressure of a 36-hour Hackathon.
+- Demystify LLM non-determinism during hardware optimization and explore mitigation strategies to reduce output deviations.
+- Implement Multi-Agent Systems to automate complex enterprise-grade workflows and business logic.
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Pham Ng Hai Anh** – AWS Community Builder
+- **Nguyen Tuan Thinh** – DevOps Engineer
+- **Tinh Truong** – Platform Engineer, GoTymeX
+- **Vy Lam** – Senior Business Systems Analyst, VPBank
+- **Duc Dao** – Solution Architect, Cloud Kinetics
+- Guest speakers and supporting teams presenting at AWS Community Day
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### 1. Context Is Everything: Making AI Actually Work for You
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+**Speaker:** Pham Ng Hai Anh – AWS Community Builder
 
-#### Transitioning to modern application architecture – Microservices
+This session introduced Amazon Quick – a unified Agentic AI platform designed to scale business user efficiency. Instead of manually consolidating data across fragmented silos, Amazon Quick enables users to:
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- Connect to over 40 data connectors, flat file uploads, and relational databases.  
+- Utilize Bedrock models, web search, and thousands of downstream actions to automate MoM generation, trigger emails, schedule meetings, analyze datasets, and construct interactive dashboards.  
+- Provide dynamic workflow routing capabilities by leveraging natural language to trigger internal API functions (Function Calling).  
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### 2. Amazon CloudFront – Foundation from Edge to Origin
 
-#### Domain-Driven Design (DDD)
+**Speaker:** Nguyen Tuan Thinh – DevOps Engineer
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+This technical deep-dive explored the role of Amazon CloudFront as the foundational layer for system performance, perimeter security, and cost optimization:
 
-#### Event-Driven Architecture
+- Streamline operational expenses and offload heavy compute resources from backend origins.  
+- Deploy a strict defensive perimeter at the edge locations:
+    + Seamlessly combine Origin Access Control (OAC) and Origin Shield to establish a secure multi-layer caching zone.
+    + Isolate backend Amazon S3 buckets or API Gateways to fully mitigate CDN-bypass attack vectors.
+- Achieve breakthrough system performance and guarantee absolute high availability.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+#### 3. Context Is Everything – Making AI Truly Effective
 
-#### Compute Evolution
+**Speaker:** Tinh Truong – Platform Engineer, GoTymeX
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+An impactful presentation focused on pragmatically unlocking the full potential of large language models. Key architectural takeaways included:
 
-#### Amazon Q Developer
+- Prioritizing quality over volume in context management engineering:
+    + Emphasizing that context quality inherently trumps context quantity when feeding data into models to prevent dilution.
+- Dissecting and analyzing 3 classic prompt-engineering pitfalls commonly committed by developers and end-users. 
+- Enhancing output determinism and alignment by enforcing a structured 4-pillar prompt framework:
+    + Goal
+    + Relevant Info
+    + Constraints
+    + Success Criteria
+- Strategic roadmap detailing the evolution of generative AI systems:
+    + Mapping out the paradigm shift from basic Prompts - Rich Context - Long-term Memory (The Second AI Brain).
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+#### 4. Enterprise-Grade Multi-Agent System
 
-### Key Takeaways
+**Speaker**: Vy Lam – Senior Business Systems Analyst, VPBank
 
-#### Design Mindset
+This case study presented a real-world deployment of a Multi-Agent AI System engineered to solve the complex problem of Startup Credit Scoring within the banking and financial services sector.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+#### Structural Pitfalls of Legacy Evaluation Frameworks
 
-#### Technical Architecture
+- Startups inherently lack standardized institutional evaluation metrics:
+    + Historical credit registries to cross-reference structural risk profiles.
+    + Long-term audited financial statements to validate steady cash flows.
+    + Tangible collateral matching traditional asset-backed lending criteria.
+- Source data streams are highly unstructured, multi-dimensional, and change at rapid velocities.  
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+#### Multi-Agent Architecture
 
-#### Modernization Strategy
+- The business logic is decoupled into a network of specialized, autonomous AI agents operating on an asynchronous event-driven model:
+- **Financial Analyst**: Evaluates financial metrics, cap tables, and short-term cash flow health.
+- **Market Analyst**: Measures addressable market size, industry growth vectors, and competitive density.
+- **Team Evaluator**: Quantifies operational capacity, track records, and execution velocity of the founding team.
+- **Risk Assessor**: Identifies systematic risk vectors and models adverse macroeconomic scenarios.
+- **Compliance Agent**: Audits operational logic to guarantee strict adherence to financial regulatory frameworks.
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+### Architectural Merits of Multi-Agent Systems
 
-### Applying to Work
+- Minimizes time-to-decision for application processing via parallel execution pipelines.
+- Delivers precise auditability and end-to-end traceability of agent decision logic for compliance officers.
+- Increases system fault tolerance through error isolation; a localized API failure within one agent does not trigger a catastrophic cascade across the platform.
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+#### 5. Enterprise AI & Security + Non-Determinism của LLM
 
-### Event Experience
+**Speaker**: Duc Dao and panel co-speakers
+- This presentation stressed that deploying AI in production requires moving past novelty features toward rigorous enterprise-grade standards:
+    + Secure: Bulletproof data privacy, preventing corporate data leakage, and encrypting transport layers.
+    + Reliable: Maximizing system stability and establishing clear boundaries on non-deterministic behavior.
+    + Scalable: Elastic infrastructure capable of scaling up to handle intense concurrent query spikes.
+    + Compliant: Strict alignment with global data regulations and internal security benchmarks.
+- The speakers also unmasked the mathematical reality behind LLM non-determinism, proving why setting temperature = 0 does not guarantee identical outputs in production.  
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+#### Core Engineering Root Causes
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+- Floating-point arithmetic on modern GPUs: Tiny compounding rounding errors when calculating massive matrix transformations. 
+- Parallel execution order: Non-fixed, asynchronous race conditions across thousands of parallel computing cores.  
+- Inference batching from provider infrastructure: Dynamic optimization and request pooling that alters the runtime computational path. 
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+#### Mitigation Strategies
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+- Structured outputs: Strictly forcing model responses into schema-validated formats (JSON Schema) for seamless backend validation.  
+- Majority voting: Querying the model cluster multiple times and executing consensus algorithms on the output array.  
+- Ensemble approach: Orchestrating a diverse mix of prompt structures and underlying base models to balance edge cases.
+- Comprehensive testing: Integrating automated testing pipelines at the inference layer to intercept and isolate logical drift.  
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+### 6. Hackathon Project – UTMorpho
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+A transparent retrospective on building an AI UI Generator prototype under extreme conditions during the LotusHacks hackathon.
+
+### Core Product Concept
+
+- An intuitive, instant canvas-based prototyping workspace allowing users to:
+    + Generate modular UI design components instantly from plain text descriptions.
+    + Interact with and modify the output wireframes directly on a vector canvas.
+    + Eliminate the friction of continuous re-prompting cycles for minor layout changes.
+    + Maintain absolute visual consistency across multi-turn design edits.
+
+#### Core Engineering & Operational Hurdles
+- Context window limitations when processing extensive codebase structures.  
+- Physical and mental burnout during an uninterrupted, hyper-intense 36-hour sprint.
+- AI overgeneration vectors creating redundant, bloated, or broken code snippets.
+- Severe time constraints forcing aggressive scope management to deliver a live demo.  
+
+#### Key Team Takeaways
+- Team chemistry is the absolute foundation; psychological safety dictates execution velocity. 
+- Real frustration with existing software workflows is what gives birth to highly practical, impactful ideas. 
+- AI should be integrated into the architecture as an active teammate rather than a passive tool.
+
+#### Key Takeaways
+
+#### Architectural Frameworks
+- Multi-agent systems are the ideal architectural blueprint for handling highly complex, multi-dimensional business logic at enterprise scale.  
+- Context Engineering has evolved into a vital engineering discipline, replacing simplistic prompting patterns.
+- Security, privacy, and compliance layers must be baked into the system architecture from day zero.
+- CloudFront serves as a mandatory foundational layer to balance high-speed global performance with cloud cost optimization. 
+
+#### Core AI Principles
+- Achieved deep clarity on inference-layer components: LLM inference characteristics, non-determinism, guardrails, and structured outputs.  
+- Developed a mature understanding that generative AI outputs are fundamentally probabilistic, not deterministic.
+
+#### Cloud & AWS Ecosystem Knowledge
+
+Acquired practical exposure to advanced enterprise cloud services: Amazon Quick capabilities, Bedrock Guardrails, CloudFront multi-layer caching, Origin Shield, OAC routing, HTTP/3 protocols, and Edge Computing paradigms.
+
+#### Practical Engineering Skills
+
+- Learned the complete lifecycle of bringing an AI system out of local environments and into a production-ready system.
+- Mastered methods for designing highly elastic, horizontal scalable architectures.
+- Built a business-first, context-driven mindset when mapping generative models to actual corporate workflows.
+
+#### Practical Applications in Studies & Work
+
+- Integrate the 4-pillar Context Framework (Goal-Info-Constraints-Criteria) into daily coding, debugging workflows, and academic research.
+- Deploy Amazon CloudFront configurations across active web and mobile engineering projects to optimize cache-hit ratios and reduce origin hardware dependencies.
+- Build local experimental prototypes of mini Multi-Agent microservices or construct a structured Personal Second AI Brain.
+- Embed automated validation layers (Structured JSON Outputs) and basic guardrail definitions into personal application developments.
+- Practice decoupling monolithic project code bases into modern microservices, event-driven, and domain-based architectures during group assignments.
+
+#### Personal Reflections on the Event
+
+Attending AWS Vietnam Community Day 2026 was a genuinely eye-opening experience. For an IT student getting ready to step into the industry, seeing how major enterprises tackle real-world system design, scale AI production pipelines, and handle cloud infrastructure at scale was a massive shift from standard textbook definitions.
+
+#### Learning from Industry Veterans
+
+- Sitting in on the expert-led panels felt like a fast-track lesson in actual production engineering. I walked away with major insights on:
+    + Breaking down heavy, old-school corporate workflows into nimble, specialized Multi-agent AI interactions.
+    + Leveraging CloudFront foundational architecture as a structural safety net to protect origins from sudden traffic spikes while keeping cloud bills low.
+    + Moving past basic hacking toward professional Context Engineering to keep models highly aligned.
+    + Implementing robust AI Security & Compliance mechanisms from the very first commit.
+
+#### Reshaping My View on AI
+
+- The technical deep dives cleared up a lot of misconceptions I had about generative models:
+    + I realized that temperature = 0 isn't a magic fix for consistency, since hardware-level parallel execution and floating-point logic naturally introduce non-determinism.
+    + It clicked that trying to write the "perfect prompt" is a short-term fix; building solid, structured context frameworks (Context Is Everything) is the professional way to scale.
+    + Seeing Amazon Quick's agentic features in action showed me how fast you can spin up data workflows and analytics pipelines completely code-free.
+
+#### Experiencing the Tech Community
+
+- What stood out most was the sheer energy of the community. The environment was incredibly collaborative, with senior solutions architects, backend developers, and tech students all sharing ideas without any gatekeeping. Discussing tech side-by-side with them taught me:
+    + The hard realities and creative workarounds required to bolt modern GenAI features onto rigid legacy systems.
+    + How to manage scope, stay focused, and keep team morale high under intense time pressure to ship a working MVP in 36 hours.
+
+#### Final Core Takeaways
+
+- When building AI for real production environments, cool features don't matter if you haven't baked security and data privacy into the core architecture.
+- If you want a model to deliver high-value outputs, stop tweaking words and focus on feeding it high-quality context.
+- For multi-dimensional business logic, a Multi-agent architecture is clearly the most scalable path forward.
+- Whether it’s a high-stakes hackathon or a professional project launch, team chemistry and open communication dictate 90% of the outcome.
 
 #### Some event photos
-*Add your event photos here*  
+![Check-in on the 26th floor](/images/4-eventparticipated/event1.jpg)
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+> Overall, AWS Vietnam Community Day 2026 gave me a massive boost of inspiration. It replaced a lot of tech hype with real-world engineering substance, giving me the clear focus and confidence I need to build out my upcoming tech projects.

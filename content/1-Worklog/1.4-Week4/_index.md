@@ -1,57 +1,41 @@
 ---
 title: "Week 4 Worklog"
-date: 2024-01-01
+date: 2026-05-11
 weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 4 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Study in person at the office, discuss technical topics, and complete lab exercises.
+* Master basic networking concepts on AWS using Amazon Virtual Private Cloud (VPC).
+* Research and practice application development in a cloud integrated environment with AWS Cloud9.
+* Learn core concepts and get familiar with relational database management using Amazon Relational Database Service (RDS).
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ---------------------------------- |
+| 2 | - Go to the office to study and work directly with the mentor team <br> - Receive research direction for the new week and prepare resources for upcoming labs | 11/05/2026 | 11/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Study basic networking theory on AWS with Amazon VPC <br> - Research core VPC components: IP CIDR blocks, Public/Private Subnets, Route Tables, and Internet Gateways | 12/05/2026 | 12/05/2026 | <https://000003.awsstudygroup.com/> |
+| 4 | - Practice building a custom VPC from the AWS Management Console <br> - Configure Route Tables to allow Public Subnet Internet connection and verify network connectivity | 13/05/2026 | 13/05/2026 | <https://000003.awsstudygroup.com/> |
+| 5 | - Research the cloud integrated development environment (IDE) AWS Cloud9 <br> - Practice launching a Cloud9 IDE environment, connecting, and running basic commands | 14/05/2026 | 14/05/2026 | <https://000049.awsstudygroup.com/> |
+| 6 | - Learn about relational database services on AWS (Amazon RDS) <br> - Initialize a basic RDS database instance (MySQL/PostgreSQL) and test external connectivity <br> - Summarize Week 4 activities and write report | 15/05/2026 | 15/05/2026 | <https://000005.awsstudygroup.com/> |
 
 
 ### Week 4 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Accumulated Practical Experience:**
+  * Attended training at the office, actively completed technical labs, and collaborated effectively with mentors.
+  
+* **Basic Understanding of Amazon VPC:**
+  * Mastered fundamental concepts to design a custom virtual private network on AWS, including IP allocation (CIDR) and dividing public and private network zones (Subnets).
+  * Understood packet routing mechanisms via Route Tables and configuring internet connectivity using Internet Gateways (IGWs).
 
-* Successfully created and configured an AWS Free Tier account.
+* **Cloud Development with AWS Cloud9:**
+  * Successfully initialized a Cloud9 IDE development environment on the cloud.
+  * Familiarized with the integrated command line interface, source code editor, and understood how Cloud9 optimizes collaborative workflows.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Foundational Knowledge of Amazon RDS:**
+  * Understood the benefits of RDS in offloading database administration overhead (automated backups, OS upgrades, patching).
+  * Learned to configure and deploy a basic database instance on AWS and configure Security Groups for secure connections.

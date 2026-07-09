@@ -1,57 +1,60 @@
 ---
 title: "Week 1 Worklog"
-date: 2024-01-01
+date: 2026-04-20
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 1 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Attend the project kickoff event (AWS Kickoff).
+* Connect and get acquainted with the First Cloud AI Journey (FCAJ) team, and study as well as comply with the rules and regulations at the internship unit.
+* Research access management and control mechanisms using the AWS IAM service.
+* Practice building a basic permission model using IAM Users, Groups, and Roles, and test the role-switching feature.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2 | - Meet and connect with members in the FCAJ project <br> - Study the rules and operational regulations of the internship unit <br> - Attend the AWS Kickoff event to start the internship <br> - Research the overview of AWS cloud infrastructure and core service groups (Compute, Storage, Network, Database) | 20/04/2026 | 20/04/2026 |  |
+| 3 | - Setup an AWS Free Tier account for practice <br> - Complete the introductory challenges to receive $100 AWS Credit support <br> - Configure Multi-Factor Authentication (MFA) to protect the root account <br> - Configure the AWS Budgets management tool | 21/04/2026 | 21/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Study the mechanism and concepts of IAM Users and IAM Groups <br> - Initialize the Admin Group and the corresponding Admin User for system administration <br> - Assign the `AdministratorAccess` policy to the Admin Group <br> - Practice logging in and operating using the new Admin User account | 22/04/2026 | 22/04/2026 | <https://000002.awsstudygroup.com/> |
+| 5 | - Study the role and real-world application of IAM Roles <br> - Create specialized permission roles (AdminRole, S3Role) <br> - Create an Operator User and assign the role assumption configuration policy | 23/04/2026 | 23/04/2026 | <https://000002.awsstudygroup.com/> |
+| 6 | - Practice the Switch Role technique from Operator to Admin to handle tasks <br> - Check and verify access limits to S3 storage via S3Role permissions <br> - Practice setting permissions based on the principle of least privilege | 24/04/2026 | 24/04/2026 | <https://000002.awsstudygroup.com/> |
 
 
 ### Week 1 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Workspace Integration:**
+  * Fully attended the Kickoff opening ceremony and got acquainted with the First Cloud AI Journey (FCAJ) team.
+  * Clearly understood and complied with the code of conduct, internal regulations, and internship procedures at the company.
 
-* Successfully created and configured an AWS Free Tier account.
+* **Foundational Knowledge of AWS Infrastructure:**
+  * Gained a general overview of AWS Cloud Computing and clearly distinguished the core service groups:
+    * **Compute:** Mastered the functions of EC2, Lambda.
+    * **Storage:** Understood S3.
+    * **Networking:** Learned the basic operations of VPC, Route53, CloudFront.
+    * **Database:** Got familiar with RDS, DynamoDB.
+    * **Security & Identity:** Grasped the roles of IAM, KMS.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* **Account Administration & Cost Control:**
+  * Successfully set up the AWS Free Tier practice environment.
+  * Accumulated $100 in AWS Credits by completing the initial guidance challenges.
+  * Enhanced information security by configuring Multi-Factor Authentication (MFA) for the Root account.
+  * Proactively set up spending thresholds and automated alerts using the AWS Budgets service to prevent unexpected costs.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* **Mastering AWS IAM Identity Management Service:**
+  * Distinctly differentiated the use cases of IAM Users (providing long-term credentials) and IAM Roles (granting short-term temporary access).
+  * Successfully configured the Admin Group using the `AdministratorAccess` policy and assigned the corresponding users.
+  * Designed and deployed specialized roles: `AdminRole` (comprehensive administration) and `S3Role` (exclusive access to S3 storage).
+  * Built an authorization mechanism by creating an Operator User with an Assume Role policy.
+  * Successfully tested the Switch Role workflow in practice, transitioning smoothly from a standard user to the Admin role.
+  * Established safe operational habits by logging in and working via an IAM User instead of the Root account.
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Applying Best IAM Security Practices:**
+  * Fully implemented the Principle of Least Privilege, granting only the necessary permissions required for the job.
+  * Encouraged using IAM Roles for temporary authorization to minimize the exposure of long-term Access Keys/Secret Keys.
+  * Set a mandatory requirement to enable MFA for high-privilege accounts.
+  * Utilized the AWS CloudTrail tool to track activity history and monitor access behavior.
+  * Minimized the use of the Root account for daily operational tasks.
