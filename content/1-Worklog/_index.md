@@ -6,8 +6,11 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
+Welcome to the workspace documenting my 12-week internship journey at First Cloud AI Journey (FCAJ).
 
-Typically and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:
+This log records my process of learning and immediately applying cloud tools (through the AWS Cloud Journey workshop series) to solve real-world problems. Over the past 3 months, my greatest focus has been building a smooth-running system from scratch, prioritizing stability and user convenience above all else. Every step, from deploying the architecture and building functional features to conducting security reviews and finalizing the bilingual documentation, is clearly presented here.
+
+The details of my weekly roadmap are as follows:
 
 Week 1: [AWS Kickoff and administrator permissions configuration with AWS IAM](1.1-Week1/)  
 

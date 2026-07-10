@@ -6,8 +6,11 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
+Chào mừng anh/chị đến với không gian lưu trữ hành trình 12 tuần thực tập của em tại First Cloud AI Journey (FCAJ).
 
-Thông thường và cũng là tiêu chuẩn, một nhật ký công việc được thực hiện trong khoảng 3 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:
+Đây là nơi ghi lại quá trình em học hỏi và áp dụng ngay các công cụ đám mây (thông qua chuỗi workshop của AWS Cloud Journey) vào việc giải quyết các bài toán thực tiễn. Suốt 3 tháng, nỗ lực lớn nhất của em là tự tay xây dựng một hệ thống hoạt động trơn tru, đặt tính ổn định và sự tiện lợi cho người dùng lên trên hết. Từng bước đi từ khâu triển khai kiến trúc, xây dựng chức năng, rà soát an toàn đến hoàn thiện tài liệu song ngữ đều được em trình bày rõ ràng.
+
+Dưới đây là lộ trình phát triển chi tiết qua từng tuần của em:
 
 Tuần 1: [AWS Kickoff và phân quyền quản trị với AWS IAM](1.1-Week1/)  
 
