@@ -21,7 +21,7 @@ pre: " <b> 1.9. </b> "
 | 3 | - Tiếp tục làm các bài lab nâng cao về cơ sở dữ liệu và phân quyền | 16/06/2026 | 16/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 4 | - Tìm hiểu kỹ hơn các dịch vụ AWS dùng cho dự án như Cognito và API Gateway | 17/06/2026 | 17/06/2026 | <https://000081.awsstudygroup.com/vi/> |
 | 5 | - Viết báo cáo worklog các tuần trước và bài thu hoạch sự kiện bằng VSCode | 18/06/2026 | 18/06/2026 | Nội bộ nhóm |
-| 6 | - Kiểm tra lại giao diện sau khi sửa và đẩy báo cáo lên git | 19/06/2026 | 19/06/2026 | Nội bộ nhóm |
+| 6 | - Tìm hiểu AWS SAM framework chuyên cho ứng dụng serverless | 19/06/2026 | 19/06/2026 |     https://000080.awsstudygroup.com/ |
 
 
 ### Kết quả đạt được tuần 9:

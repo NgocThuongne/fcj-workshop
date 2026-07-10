@@ -19,10 +19,10 @@ pre: " <b> 1.9. </b> "
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ---------------------------------- |
 | 2 | - Go to the office for the weekly meeting and fix layout issues on the Frontend | 15/06/2026 | 15/06/2026 | Internal Team |
-| 3 | - Continue working on advanced lab exercises | 16/06/2026 | 16/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Continue working on advanced lab exercises -   | 16/06/2026 | 16/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 4 | - Study the AWS services used in the project, such as Cognito and API Gateway | 17/06/2026 | 17/06/2026 | <https://000081.awsstudygroup.com/> |
 | 5 | - Write reports of previous weeks and event write-ups on VSCode | 18/06/2026 | 18/06/2026 | Internal Team |
-| 6 | - Check the interface after fixing bugs and push reports to Git | 19/06/2026 | 19/06/2026 | Internal Team |
+| 6 | - Learn AWS SAM (Serverless Application Model): a framework dedicated to serverless applications | 19/06/2026 | 19/06/2026 |     https://000080.awsstudygroup.com/ |
 
 
 ### Week 9 Achievements:

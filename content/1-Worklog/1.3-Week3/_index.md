@@ -37,5 +37,4 @@ pre: " <b> 1.3. </b> "
 
 * **Deep Understanding of AWS Physical Infrastructure (AWS Data Center):**
   * Grasped how AWS designs its data centers to guarantee high availability (High Availability) and fault tolerance (Fault Tolerance).
-  * Understood the interconnection between Edge Locations, Availability Zones (AZs), and Regions worldwide.
   * Completed simulation labs and infrastructure diagrams to visualize AWS's physical network structure.

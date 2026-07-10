@@ -36,5 +36,4 @@ pre: " <b> 1.3. </b> "
 
 * **Hiểu sâu về hạ tầng vật lý của AWS (AWS Data Center):**
   * Nắm được cách thức AWS thiết kế các trung tâm dữ liệu nhằm đảm bảo tính dự phòng cao (High Availability) và khả năng chống chịu lỗi (Fault Tolerance).
-  * Hiểu cách tổ chức liên kết giữa các Edge Locations, Availability Zones (AZs) và Regions trên phạm vi toàn thế giới.
   * Hoàn thành các bài lab mô phỏng và sơ đồ trực quan hóa hạ tầng mạng lưới vật lý của AWS.

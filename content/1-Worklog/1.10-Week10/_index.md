@@ -20,9 +20,9 @@ pre: " <b> 1.10. </b> "
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ---------------------------------- |
 | 2 | - Go to the office for the weekly meeting and fix layout issues on the Frontend | 22/06/2026 | 22/06/2026 | Internal Team |
 | 3 | - Continue working on advanced lab exercises | 23/06/2026 | 23/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 4 | - Translate technical articles on VSCode | 24/06/2026 | 24/06/2026 | Internal Team |
+| 4 | - Check and narrow down over-granted permissions, remove unnecessary ones | 24/06/2026 | 24/06/2026 | Internal Team |
 | 5 | - Write about system architecture and draw project flowcharts | 25/06/2026 | 25/06/2026 | Internal Team |
-| 6 | - Meet with the team to finalize the report, test the Frontend UI, and push to Git | 26/06/2026 | 26/06/2026 | Internal Team |
+| 6 | - Translate technical articles on VSCode | 26/06/2026 | 26/06/2026 | Internal Team |
 
 
 ### Week 10 Achievements:

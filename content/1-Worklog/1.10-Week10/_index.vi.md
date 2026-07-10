@@ -18,11 +18,11 @@ pre: " <b> 1.10. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2 | - Lên văn phòng họp tuần với mentor và rà soát, sửa lỗi giao diện Frontend của dự án | 22/06/2026 | 22/06/2026 | Nội bộ nhóm |
+| 2 | - Rà soát toàn bộ project end-to-end, kiểm tra từng chức năng chính, sửa lỗi giao diện Frontend của dự án | 22/06/2026 | 22/06/2026 | Nội bộ nhóm |
 | 3 | - Tiếp tục làm các bài thực hành lab nâng cao được giao | 23/06/2026 | 23/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 4 | - Viết tiếp các bài blog công nghệ dịch thuật trên VSCode | 24/06/2026 | 24/06/2026 | Nội bộ nhóm |
-| 5 | - Bắt đầu viết phần báo cáo kiến trúc hệ thống và vẽ sơ đồ hoạt động của dự án | 25/06/2026 | 25/06/2026 | Nội bộ nhóm |
-| 6 | - Họp nhóm chốt nội dung báo cáo, kiểm tra lại giao diện sau khi sửa lỗi và đẩy code lên git | 26/06/2026 | 26/06/2026 | Nội bộ nhóm |
+| 4 | - Kiểm tra và thu hẹp các quyền cấp thừa, loại bỏ quyền không cần thiết | 24/06/2026 | 24/06/2026 | Nội bộ nhóm |
+| 5 | - Viết phần Clean-up cho báo cáo | 25/06/2026 | 25/06/2026 | Nội bộ nhóm |
+| 6 | - Viết tiếp các bài blog công nghệ dịch thuật trên VSCode | 26/06/2026 | 26/06/2026 | Nội bộ nhóm |
 
 
 ### Kết quả đạt được tuần 10:

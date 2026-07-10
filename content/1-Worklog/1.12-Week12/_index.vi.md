@@ -19,8 +19,8 @@ pre: " <b> 1.12. </b> "
 | 2 | - Bắt đầu tổng hợp lại các công việc đã làm trong quá trình thực tập | 06/07/2026 | 06/07/2026 | Nội bộ nhóm |
 | 3 | - Viết và hoàn thành báo cáo thực tập chi tiết | 07/07/2026 | 07/07/2026 | Nội bộ nhóm |
 | 4 | - Tự đánh giá quá trình thực tập, viết phần kết luận và rút ra các bài học kinh nghiệm cho bản thân | 08/07/2026 | 08/07/2026 | Nội bộ nhóm |
-| 5 | - Đóng gói các file báo cáo, slide thuyết trình và demo dự án trên VSCode | 09/07/2026 | 09/07/2026 | Nội bộ nhóm |
-| 6 | - Tham gia buổi báo cáo tổng kết thực tập tại văn phòng | 10/07/2026 | 10/07/2026 | Nội bộ nhóm |
+| 5 | - Kiểm tra lại tất cả và Deploy lên Git | 09/07/2026 | 09/07/2026 | Nội bộ nhóm |
+| 6 | - Hoàn thành và nộp project | 10/07/2026 | 10/07/2026 | Nội bộ nhóm |
 
 
 ### Kết quả đạt được tuần 12:

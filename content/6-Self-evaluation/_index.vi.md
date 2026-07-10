@@ -9,11 +9,11 @@ pre: " <b> 6. </b> "
 
 Trong suốt thời gian thực tập tại Công ty TNHH Amazon Web Services Việt Nam từ 17/04/2026 đến 10/07/2026, em đã có cơ hội học hỏi, rèn luyện và áp dụng những kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.
 
-Em đã tham gia chương trình Bootcamp First Cloud AI Journey, tìm hiểu và thực hành các dịch vụ AWS như Amazon S3, AWS Lambda, API Gateway, DynamoDB, IAM, Amazon Bedrock, Docker, Git/GitHub và ReactJS. Bên cạnh đó, tôi còn tham gia phát triển dự án Chatbot RAG, thực hiện viết tài liệu, cập nhật worklog hằng tuần, tham gia các workshop, sự kiện công nghệ và trình bày demo sản phẩm. Qua đó, tôi đã cải thiện các kỹ năng chuyên môn, kỹ năng làm việc nhóm, kỹ năng tự học, kỹ năng viết tài liệu và kỹ năng giao tiếp trong môi trường doanh nghiệp.
+Em đã tham gia chương trình Bootcamp First Cloud AI Journey, tìm hiểu và thực hành các dịch vụ AWS như Amazon S3, AWS Lambda, API Gateway, DynamoDB, IAM, Amazon Bedrock, Docker, Git/GitHub và ReactJS. Bên cạnh đó, em còn tham gia phát triển dự án Chatbot RAG, thực hiện viết tài liệu, cập nhật worklog hằng tuần, tham gia các workshop, sự kiện công nghệ và trình bày demo sản phẩm. Qua đó, tôi đã cải thiện các kỹ năng chuyên môn, kỹ năng làm việc nhóm, kỹ năng tự học, kỹ năng viết tài liệu và kỹ năng giao tiếp trong môi trường doanh nghiệp.
 
-Về tác phong, tôi luôn cố gắng hoàn thành tốt các nhiệm vụ được giao, tuân thủ nội quy của công ty, chủ động học hỏi kiến thức mới và tích cực trao đổi với người hướng dẫn cũng như các thành viên trong nhóm để nâng cao hiệu quả công việc.
+Về tác phong, em luôn cố gắng hoàn thành tốt các nhiệm vụ được giao, tuân thủ nội quy của công ty, chủ động học hỏi kiến thức mới và tích cực trao đổi với người hướng dẫn cũng như các thành viên trong nhóm để nâng cao hiệu quả công việc.
 
-Để phản ánh một cách khách quan quá trình thực tập, tôi xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
+Để phản ánh một cách khách quan quá trình thực tập, em xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
 
 
 | STT | Tiêu chí                            | Mô tả                                                                                            | Tốt | Khá | Trung bình |

@@ -17,11 +17,11 @@ pre: " <b> 1.11. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ---------------------------------- |
-| 2 | - Go to the office for the weekly meeting and test the final project system | 29/06/2026 | 29/06/2026 | Internal Team |
+| 2 | - - Finalize the Proposal and Events Participated sections | 29/06/2026 | 29/06/2026 | Internal Team |
 | 3 | - Complete extra lab exercises and clean up unused resources on AWS | 30/06/2026 | 30/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 4 | - Write and format weekly worklog reports on VSCode | 01/07/2026 | 01/07/2026 | Internal Team |
 | 5 | - Write the detailed project report and start making presentation slides | 02/07/2026 | 02/07/2026 | Internal Team |
-| 6 | - Meet with the team to test the demo and review presentation slides | 03/07/2026 | 03/07/2026 | Internal Team |
+| 6 | Review and standardize the bilingual content. | 03/07/2026 | 03/07/2026 | Internal Team |
 
 
 ### Week 11 Achievements:

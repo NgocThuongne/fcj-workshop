@@ -17,11 +17,11 @@ pre: " <b> 1.11. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2 | - Lên văn phòng họp nhóm với mentor và kiểm tra hệ thống của dự án cuối khóa | 29/06/2026 | 29/06/2026 | Nội bộ nhóm |
-| 3 | - Làm nốt các bài lab bổ sung và dọn dẹp các tài nguyên không sử dụng trên AWS | 30/06/2026 | 30/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Hoàn thiện phần Proposal và Events Participated | 29/06/2026 | 29/06/2026 | Nội bộ nhóm |
+| 3 | - Dọn dẹp các tài nguyên không sử dụng trên AWS | 30/06/2026 | 30/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | 4 | - Viết và định dạng các bài báo cáo worklog hàng tuần trên VSCode | 01/07/2026 | 01/07/2026 | Nội bộ nhóm |
-| 5 | - Viết báo cáo chi tiết cho dự án và bắt đầu làm slide thuyết trình | 02/07/2026 | 02/07/2026 | Nội bộ nhóm |
-| 6 | - Họp nhóm chạy thử demo và rà soát lại slide thuyết trình trước khi báo cáo | 03/07/2026 | 03/07/2026 | Nội bộ nhóm |
+| 5 | Bổ sung các hình ảnh, sơ đồ | 02/07/2026 | 02/07/2026 | Nội bộ nhóm |
+| 6 | Rà soát và chuẩn hóa nội dung song ngữ. | 03/07/2026 | 03/07/2026 | Nội bộ nhóm |
 
 
 ### Kết quả đạt được tuần 11:
